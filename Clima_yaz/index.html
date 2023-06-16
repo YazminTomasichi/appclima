@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ <h1>Consulta de Clima</h1>
+
+<!--------FUNCION 1-------->
+    <div>
+        <label for="ciudad">Selecciona la ciudad</label>
+    </div>
+    
+    <div>
+        <input type="text" id="ciudad" placeholder="Selecciona">
+        <button onclick="consultarClima()">Consultar</button>
+    </div>
+
+    <br>
+
+<!--------FUNCION 2-------->
+    <div>
+        <label for="ciudad">Escribe las ciudades</label>
+    </div>
+
+    <div>
+        <input type="text" id="ciudades" placeholder="Escribe la ciudad separado por comas (,)">
+        <button onclick="consultarClimas()">Consultar</button>
+    </div>    
+
+    <br>
+
+<!--------BOTON LIMPIAR-------->
+    <div>
+        <button onclick="limpiarTabla()">Limpiar tabla</button>
+    </div>
+
+    <br>
+
+<!--------TABLA-------->
+    <div>
+        <table id="tabla-clima">
+            <thead>
+            <tr>
+                <th>Ciudad</th>
+                <th>Temperatura</th>
+                <th>Descripción</th>
+                <th>Icono</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+   
+<script src="js/script.js"></script>
+</body>
+</html>
